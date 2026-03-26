@@ -199,7 +199,7 @@ const SEED = [{
   pin: "1234",
   dept: "Assembly",
   role: "Contractor",
-  site: "DFM Marshall",
+  site: "Acme Logistics",
   shift: "day",
   shiftStart: "06:00",
   shiftEnd: "14:30",
@@ -215,7 +215,7 @@ const SEED = [{
   pin: "5678",
   dept: "Quality",
   role: "Contractor",
-  site: "DFM Marshall",
+  site: "Acme Logistics",
   shift: "day",
   shiftStart: "06:00",
   shiftEnd: "14:30",
@@ -231,7 +231,7 @@ const SEED = [{
   pin: "9012",
   dept: "Assembly",
   role: "Contractor",
-  site: "DFM Marshall",
+  site: "Acme Logistics",
   shift: "day",
   shiftStart: "06:00",
   shiftEnd: "14:30",
@@ -247,7 +247,7 @@ const SEED = [{
   pin: "3456",
   dept: "Packaging",
   role: "Contractor",
-  site: "DFM Marshall",
+  site: "Acme Logistics",
   shift: "day-late",
   shiftStart: "07:00",
   shiftEnd: "15:30",
@@ -263,7 +263,7 @@ const SEED = [{
   pin: "7890",
   dept: "Assembly",
   role: "Lead",
-  site: "DFM Marshall",
+  site: "Acme Logistics",
   shift: "day-early",
   shiftStart: "05:30",
   shiftEnd: "14:00",
@@ -279,7 +279,7 @@ const SEED = [{
   pin: "2468",
   dept: "Quality",
   role: "Contractor",
-  site: "DFM Marshall",
+  site: "Acme Logistics",
   shift: "day",
   shiftStart: "06:00",
   shiftEnd: "14:30",
@@ -295,7 +295,7 @@ const SEED = [{
   pin: "1357",
   dept: "Shipping",
   role: "Contractor",
-  site: "DFM Marshall",
+  site: "Acme Logistics",
   shift: "day-late",
   shiftStart: "07:00",
   shiftEnd: "15:30",
@@ -311,7 +311,7 @@ const SEED = [{
   pin: "8024",
   dept: "Assembly",
   role: "Contractor",
-  site: "DFM Marshall",
+  site: "Acme Logistics",
   shift: "day",
   shiftStart: "06:00",
   shiftEnd: "14:30",
@@ -327,7 +327,7 @@ const SEED = [{
   pin: "6813",
   dept: "Packaging",
   role: "Contractor",
-  site: "DFM Marshall",
+  site: "Acme Logistics",
   shift: "day-late",
   shiftStart: "07:00",
   shiftEnd: "15:30",
@@ -343,7 +343,7 @@ const SEED = [{
   pin: "4927",
   dept: "Assembly",
   role: "Contractor",
-  site: "DFM Marshall",
+  site: "Acme Logistics",
   shift: "day",
   shiftStart: "06:00",
   shiftEnd: "14:30",
@@ -369,7 +369,7 @@ const DEFAULT_GEO = {
   siteLng: -83.2119,
   geoRadius: 30, geoMaxAccuracy: 50,
   enforceGeo: false,
-  siteAddress: "DFM Marshall Plant, Marshall, MI"
+  siteAddress: "Acme Logistics Plant, Marshall, MI"
 };
 
 /* ═══ SUPABASE CONFIG — Set your project credentials here ═══ */
@@ -1346,7 +1346,7 @@ function DfmLogo({
       color: "#6B9FD0",
       letterSpacing: 1.5
     }
-  }, "DFM"));
+  }, "Acme"));
 }
 
 /* ═══ SHARED UI ═══ */
@@ -2356,7 +2356,7 @@ function KioskView({
         color: C.t4,
         letterSpacing: 0.5
       }
-    }, "DFM Marshall \xB7 Spark Talent"), gc.enforceGeo || gc.enforceIP ? /*#__PURE__*/React.createElement("div", {
+    }, "Acme Logistics \xB7 Spark Talent"), gc.enforceGeo || gc.enforceIP ? /*#__PURE__*/React.createElement("div", {
       style: {
         marginTop: 12,
         display: "inline-flex",
@@ -3013,7 +3013,7 @@ function KioskView({
     onClick: function() {
       if (onStaffLogin) onStaffLogin();
     }
-  }, "\xA9 2026 Spark Companies \xB7 DFM Solutions")));
+  }, "\xA9 2026 Spark Companies \xB7 Acme Logistics")));
 }
 
 /* ═══ MANAGER VIEW ═══ */
@@ -5527,7 +5527,7 @@ function AdminView({
       pin: form.pin || genPin(),
       dept: form.dept,
       role: "Contractor",
-      site: "DFM Marshall",
+      site: "Acme Logistics",
       shift: sh.k,
       shiftStart: form.shiftStart,
       shiftEnd: form.shiftEnd,
@@ -5787,7 +5787,7 @@ function AdminView({
       color: C.t1,
       marginBottom: 10
     }
-  }, "System Configuration"), [["Kiosk Device", "KIOSK-MARSHALL-01", C.green], ["Site", "DFM Marshall Plant, MI", C.spark], ["Pay Period", "Mon–Sun (Weekly)", C.blue], ["Policy Version", "v7.0", C.spark], ["IP Enforcement", GC.enforceIP ? "ENABLED" : "DISABLED", GC.enforceIP ? C.green : C.t4], ["Geo Enforcement", GC.enforceGeo ? "ENABLED" : "DISABLED", GC.enforceGeo ? C.green : C.t4], ["Current IP", getIP(), C.t3], ["Storage", "Persistent (Supabase-ready)", C.green]].map(function (r) {
+  }, "System Configuration"), [["Kiosk Device", "KIOSK-MARSHALL-01", C.green], ["Site", "Acme Logistics Plant, MI", C.spark], ["Pay Period", "Mon–Sun (Weekly)", C.blue], ["Policy Version", "v7.0", C.spark], ["IP Enforcement", GC.enforceIP ? "ENABLED" : "DISABLED", GC.enforceIP ? C.green : C.t4], ["Geo Enforcement", GC.enforceGeo ? "ENABLED" : "DISABLED", GC.enforceGeo ? C.green : C.t4], ["Current IP", getIP(), C.t3], ["Storage", "Persistent (Supabase-ready)", C.green]].map(function (r) {
     return /*#__PURE__*/React.createElement("div", {
       key: r[0],
       style: {
@@ -8312,6 +8312,307 @@ ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(
   }
 })();
 
-</script>
+
+
+// ═══════════════════════════════════════════════════════
+// SPARK TIMEKEEP — SALES TOOLS
+// ═══════════════════════════════════════════════════════
+(function(){
+  var SALES_KEY="spark-tk-sales-panel";
+  var G="#FACC15",BG="#09090B",SRF="#111113",BD="#1E1E22",T1="#FAFAFA",T2="#A1A1AA",T3="#71717A",T4="#3F3F46";
+  var FF="'DM Sans',sans-serif";
+
+  // ── SALES TOOLS FLOATING BUTTON ──
+  var salesBtn=document.createElement("button");
+  salesBtn.textContent="\u2726 Sales Tools";
+  salesBtn.style.cssText="position:fixed;bottom:16px;left:16px;z-index:99998;padding:10px 20px;background:"+G+";color:#000;border:none;border-radius:8px;font-weight:700;font-size:13px;cursor:pointer;font-family:"+FF+";box-shadow:0 2px 12px rgba(250,204,21,0.3);";
+  
+  var salesPanel=document.createElement("div");
+  salesPanel.style.cssText="display:none;position:fixed;inset:0;z-index:100001;background:rgba(0,0,0,0.9);font-family:"+FF+";overflow-y:auto;";
+
+  salesBtn.onclick=function(){salesPanel.style.display="flex"};
+
+  // ── PANEL CONTENT ──
+  function buildPanel(){
+    var activeTab="roi";
+    function render(){
+      var tabs=[
+        {id:"roi",label:"ROI Calculator",icon:"\u2726"},
+        {id:"compare",label:"vs Competitors",icon:"\u2694"},
+        {id:"brand",label:"Brand Preview",icon:"\u2728"},
+        {id:"auto",label:"Auto Demo",icon:"\u25B6"}
+      ];
+      
+      salesPanel.innerHTML='<div style="width:100%;max-width:900px;margin:auto;padding:32px 20px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px"><div style="font-size:22px;font-weight:800;color:'+G+'">Spark TimeKeep — Sales Tools</div><button id="st-close" style="background:none;border:none;color:'+T3+';font-size:24px;cursor:pointer">\u2715</button></div>'
+      +'<div style="display:flex;gap:8px;margin-bottom:24px">'+tabs.map(function(t){return '<button class="st-tab" data-tab="'+t.id+'" style="padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:'+FF+";border:1px solid "+(activeTab===t.id?G:BD)+";background:"+(activeTab===t.id?"rgba(250,204,21,0.1)":"transparent")+";color:"+(activeTab===t.id?G:T3)+'">'+t.icon+' '+t.label+'</button>'}).join("")+'</div>'
+      +'<div id="st-content"></div></div>';
+
+      document.getElementById("st-close").onclick=function(){salesPanel.style.display="none"};
+      [].forEach.call(document.querySelectorAll(".st-tab"),function(b){
+        b.onclick=function(){activeTab=b.dataset.tab;render()}
+      });
+
+      var content=document.getElementById("st-content");
+      if(activeTab==="roi") renderROI(content);
+      else if(activeTab==="compare") renderCompare(content);
+      else if(activeTab==="brand") renderBrand(content);
+      else if(activeTab==="auto") renderAutoDemo(content);
+    }
+    render();
+  }
+
+  // ═══════════════════════════════════════
+  // ROI CALCULATOR
+  // ═══════════════════════════════════════
+  function renderROI(el){
+    var headcount=50,avgRate=18,theftPct=4.5,sparkCost=0;
+    function calc(){
+      var annualPayroll=headcount*avgRate*2080;
+      var currentLoss=annualPayroll*(theftPct/100);
+      var sparkRecovery=currentLoss*0.80;
+      var netSavings=sparkRecovery-(sparkCost*headcount*12);
+      var perEmpSaving=Math.round(netSavings/headcount);
+      var roi=sparkCost>0?Math.round(sparkRecovery/(sparkCost*headcount*12)*100):999;
+      var paybackMonths=sparkCost>0?Math.round((sparkCost*headcount*12)/sparkRecovery*12):0;
+
+      el.innerHTML='<div style="background:'+SRF+';border:1px solid '+BD+';border-radius:12px;padding:24px;margin-bottom:16px">'
+      +'<div style="font-size:16px;font-weight:700;color:'+T1+';margin-bottom:20px">Configure Your Scenario</div>'
+      +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">'
+      +inputRow("Employees","headcount",headcount,"10–10,000")
+      +inputRow("Avg Hourly Rate ($)","avgRate",avgRate,"$12–$45")
+      +inputRow("Est. Time Theft (%)","theftPct",theftPct,"Industry avg: 4.5%")
+      +inputRow("Spark Cost / Employee / Mo ($)","sparkCost",sparkCost,"$0 during pilot")
+      +'</div></div>'
+      +'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px">'
+      +kpiCard("Annual Payroll","$"+comma(Math.round(annualPayroll)),T2)
+      +kpiCard("Current Time Theft Loss","$"+comma(Math.round(currentLoss)),"#EF4444")
+      +kpiCard("Recovered by Spark","$"+comma(Math.round(sparkRecovery)),"#22C55E")
+      +kpiCard("Net Annual Savings","$"+comma(Math.round(netSavings)),G)
+      +'</div>'
+      +'<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">'
+      +kpiCard("Per Employee Savings","$"+comma(perEmpSaving)+"/yr",G)
+      +kpiCard("ROI",roi+"%","#22C55E")
+      +kpiCard("Payback Period",paybackMonths>0?paybackMonths+" months":"Immediate",G)
+      +'</div>';
+
+      [].forEach.call(el.querySelectorAll("input[data-field]"),function(inp){
+        inp.oninput=function(){
+          var v=parseFloat(inp.value)||0;
+          if(inp.dataset.field==="headcount")headcount=v;
+          else if(inp.dataset.field==="avgRate")avgRate=v;
+          else if(inp.dataset.field==="theftPct")theftPct=v;
+          else if(inp.dataset.field==="sparkCost")sparkCost=v;
+          calc();
+        };
+      });
+    }
+    calc();
+  }
+
+  function inputRow(label,field,val,hint){
+    return '<div><div style="font-size:12px;color:'+T3+';margin-bottom:4px">'+label+'</div><input data-field="'+field+'" type="number" value="'+val+'" style="width:100%;background:'+BG+';border:1px solid '+BD+';color:'+T1+';padding:10px;border-radius:6px;font-size:15px;font-weight:600;outline:none;font-family:monospace;box-sizing:border-box"><div style="font-size:11px;color:'+T4+';margin-top:2px">'+hint+'</div></div>';
+  }
+  function kpiCard(label,value,color){
+    return '<div style="background:'+SRF+';border:1px solid '+BD+';border-radius:10px;padding:16px;border-left:3px solid '+color+'"><div style="font-size:10px;font-weight:700;color:'+T4+';text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">'+label+'</div><div style="font-size:22px;font-weight:800;color:'+color+';font-family:monospace">'+value+'</div></div>';
+  }
+  function comma(n){return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")}
+
+  // ═══════════════════════════════════════
+  // COMPETITOR COMPARISON
+  // ═══════════════════════════════════════
+  function renderCompare(el){
+    var features=[
+      {name:"Badge Clock In/Out",spark:true,kronos:true,adp:true,wiw:true,deputy:true},
+      {name:"Attendance Point System",spark:true,kronos:true,adp:false,wiw:false,deputy:false},
+      {name:"Auto-Detect Violations",spark:true,kronos:true,adp:false,wiw:false,deputy:false},
+      {name:"Geofence Enforcement",spark:true,kronos:true,adp:true,wiw:true,deputy:true},
+      {name:"Manager Dashboard",spark:true,kronos:true,adp:true,wiw:true,deputy:true},
+      {name:"Real-Time Alerts",spark:true,kronos:true,adp:true,wiw:false,deputy:true},
+      {name:"Punch Editing / Correction",spark:true,kronos:true,adp:true,wiw:true,deputy:true},
+      {name:"Configurable Point Policies",spark:true,kronos:true,adp:false,wiw:false,deputy:false},
+      {name:"No Per-User Licensing",spark:true,kronos:false,adp:false,wiw:false,deputy:false},
+      {name:"Zero IT Implementation",spark:true,kronos:false,adp:false,wiw:true,deputy:true},
+      {name:"Tablet Kiosk Mode",spark:true,kronos:true,adp:false,wiw:true,deputy:true},
+      {name:"Works Offline",spark:true,kronos:false,adp:false,wiw:false,deputy:false},
+      {name:"Custom Branding",spark:true,kronos:false,adp:false,wiw:false,deputy:true},
+      {name:"Sub-30-Min Setup",spark:true,kronos:false,adp:false,wiw:true,deputy:true}
+    ];
+    var pricing=[
+      {name:"Spark TimeKeep",price:"$2–4/user/mo",impl:"Same day",contract:"Month-to-month",color:G},
+      {name:"Kronos / UKG",price:"$6–12/user/mo",impl:"3–6 months",contract:"Annual",color:"#EF4444"},
+      {name:"ADP Time",price:"$5–10/user/mo",impl:"1–3 months",contract:"Annual",color:"#EF4444"},
+      {name:"When I Work",price:"$4–8/user/mo",impl:"1 week",contract:"Monthly",color:"#FB923C"},
+      {name:"Deputy",price:"$4.50–6/user/mo",impl:"1–2 weeks",contract:"Monthly",color:"#FB923C"}
+    ];
+
+    var check='<span style="color:#22C55E;font-weight:700">\u2713</span>';
+    var cross='<span style="color:#EF4444">\u2717</span>';
+
+    var tableRows=features.map(function(f){
+      return '<tr style="border-bottom:1px solid '+BD+'"><td style="padding:10px 12px;font-size:13px;color:'+T1+'">'+f.name+'</td>'
+      +'<td style="padding:10px;text-align:center;background:rgba(250,204,21,0.04)">'+(f.spark?check:cross)+'</td>'
+      +'<td style="padding:10px;text-align:center">'+(f.kronos?check:cross)+'</td>'
+      +'<td style="padding:10px;text-align:center">'+(f.adp?check:cross)+'</td>'
+      +'<td style="padding:10px;text-align:center">'+(f.wiw?check:cross)+'</td>'
+      +'<td style="padding:10px;text-align:center">'+(f.deputy?check:cross)+'</td></tr>';
+    }).join("");
+
+    var pricingCards=pricing.map(function(p){
+      return '<div style="background:'+SRF+';border:1px solid '+(p.color===G?G:BD)+';border-radius:10px;padding:16px;'+(p.color===G?'border-width:2px;box-shadow:0 0 20px rgba(250,204,21,0.1)':'')+'"><div style="font-size:14px;font-weight:700;color:'+p.color+';margin-bottom:8px">'+p.name+'</div><div style="font-size:20px;font-weight:800;color:'+T1+';font-family:monospace;margin-bottom:8px">'+p.price+'</div><div style="font-size:12px;color:'+T3+'">Setup: '+p.impl+'</div><div style="font-size:12px;color:'+T3+'">Contract: '+p.contract+'</div></div>';
+    }).join("");
+
+    el.innerHTML='<div style="background:'+SRF+';border:1px solid '+BD+';border-radius:12px;padding:24px;margin-bottom:16px;overflow-x:auto">'
+    +'<div style="font-size:16px;font-weight:700;color:'+T1+';margin-bottom:16px">Feature Comparison</div>'
+    +'<table style="width:100%;border-collapse:collapse;min-width:600px"><thead><tr>'
+    +'<th style="padding:10px;text-align:left;font-size:12px;color:'+T4+';text-transform:uppercase">Feature</th>'
+    +'<th style="padding:10px;text-align:center;font-size:12px;color:'+G+';font-weight:800;background:rgba(250,204,21,0.04)">Spark</th>'
+    +'<th style="padding:10px;text-align:center;font-size:12px;color:'+T4+'">Kronos/UKG</th>'
+    +'<th style="padding:10px;text-align:center;font-size:12px;color:'+T4+'">ADP</th>'
+    +'<th style="padding:10px;text-align:center;font-size:12px;color:'+T4+'">WhenIWork</th>'
+    +'<th style="padding:10px;text-align:center;font-size:12px;color:'+T4+'">Deputy</th>'
+    +'</tr></thead><tbody>'+tableRows+'</tbody></table></div>'
+    +'<div style="font-size:16px;font-weight:700;color:'+T1+';margin-bottom:12px">Pricing Comparison</div>'
+    +'<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px">'+pricingCards+'</div>';
+  }
+
+  // ═══════════════════════════════════════
+  // CLIENT BRAND PREVIEW
+  // ═══════════════════════════════════════
+  function renderBrand(el){
+    var companyName=safeStorage.getItem("demo-brand-name")||"Acme Logistics";
+    var brandColor=safeStorage.getItem("demo-brand-color")||"#FACC15";
+
+    el.innerHTML='<div style="background:'+SRF+';border:1px solid '+BD+';border-radius:12px;padding:24px;margin-bottom:16px">'
+    +'<div style="font-size:16px;font-weight:700;color:'+T1+';margin-bottom:4px">See It With Your Brand</div>'
+    +'<div style="font-size:13px;color:'+T3+';margin-bottom:20px">Type a company name and pick a color — the entire app re-skins live.</div>'
+    +'<div style="display:flex;gap:12px;margin-bottom:20px;align-items:end">'
+    +'<div style="flex:1"><div style="font-size:12px;color:'+T3+';margin-bottom:4px">Company Name</div><input id="brand-name" value="'+companyName+'" style="width:100%;background:'+BG+';border:1px solid '+BD+';color:'+T1+';padding:10px;border-radius:6px;font-size:15px;font-weight:600;outline:none;font-family:'+FF+';box-sizing:border-box"></div>'
+    +'<div><div style="font-size:12px;color:'+T3+';margin-bottom:4px">Brand Color</div><input id="brand-color" type="color" value="'+brandColor+'" style="width:60px;height:42px;border:1px solid '+BD+';border-radius:6px;background:'+BG+';cursor:pointer"></div>'
+    +'<button id="brand-apply" style="padding:10px 24px;background:'+G+';color:#000;border:none;border-radius:8px;font-weight:700;font-size:13px;cursor:pointer;font-family:'+FF+';white-space:nowrap">Apply Brand</button>'
+    +'<button id="brand-reset" style="padding:10px 16px;background:transparent;border:1px solid '+BD+';color:'+T3+';border-radius:8px;font-size:13px;cursor:pointer;font-family:'+FF+'">Reset</button>'
+    +'</div></div>'
+    +'<div style="font-size:14px;font-weight:600;color:'+T1+';margin-bottom:12px">Preview</div>'
+    +'<div style="background:'+BG+';border:1px solid '+BD+';border-radius:12px;padding:20px;display:flex;flex-direction:column;align-items:center;gap:16px">'
+    +'<div style="font-size:28px;font-weight:800;color:'+brandColor+'" id="brand-preview-name">'+companyName+'</div>'
+    +'<div style="font-size:14px;color:'+T3+'">TimeKeep by Spark Companies</div>'
+    +'<div style="display:flex;gap:12px">'
+    +'<div style="width:120px;height:80px;background:'+brandColor+';border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#000;font-size:13px">Primary</div>'
+    +'<div style="width:120px;height:80px;background:'+SRF+';border:2px solid '+brandColor+';border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:600;color:'+brandColor+';font-size:13px">Accent</div>'
+    +'<div style="width:120px;height:80px;background:'+BG+';border:1px solid '+brandColor+';border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:600;color:'+T1+';font-size:13px">Surface</div>'
+    +'</div>'
+    +'<div style="font-size:12px;color:'+T4+'">Close this panel to see the full app with your branding applied</div>'
+    +'</div>';
+
+    document.getElementById("brand-name").oninput=function(){
+      companyName=this.value;
+      document.getElementById("brand-preview-name").textContent=companyName;
+      document.getElementById("brand-preview-name").style.color=brandColor;
+    };
+    document.getElementById("brand-color").oninput=function(){
+      brandColor=this.value;
+      document.getElementById("brand-preview-name").style.color=brandColor;
+    };
+    document.getElementById("brand-apply").onclick=function(){
+      safeStorage.setItem("demo-brand-name",companyName);
+      safeStorage.setItem("demo-brand-color",brandColor);
+      // Apply brand color to CSS custom property and key elements
+      document.documentElement.style.setProperty("--spark-brand",brandColor);
+      // Update all elements using C.spark color
+      var style=document.createElement("style");
+      style.textContent="[data-brand]{color:"+brandColor+" !important}";
+      document.head.appendChild(style);
+      alert("Brand applied! Close Sales Tools to see '"+companyName+"' branded throughout the app.\n\nNote: Full re-skinning takes effect on next page load.");
+      safeStorage.setItem("demo-brand-applied","true");
+      location.reload();
+    };
+    document.getElementById("brand-reset").onclick=function(){
+      safeStorage.removeItem("demo-brand-name");
+      safeStorage.removeItem("demo-brand-color");
+      safeStorage.removeItem("demo-brand-applied");
+      location.reload();
+    };
+  }
+
+  // ═══════════════════════════════════════
+  // ANIMATED AUTO-DEMO
+  // ═══════════════════════════════════════
+  function renderAutoDemo(el){
+    el.innerHTML='<div style="background:'+SRF+';border:1px solid '+BD+';border-radius:12px;padding:24px">'
+    +'<div style="font-size:16px;font-weight:700;color:'+T1+';margin-bottom:4px">Animated Kiosk Demo</div>'
+    +'<div style="font-size:13px;color:'+T3+';margin-bottom:20px">Close this panel, then watch as the system automatically demonstrates the clock-in flow. Perfect for trade shows or unattended displays.</div>'
+    +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">'
+    +'<button id="auto-start" style="padding:14px;background:'+G+';color:#000;border:none;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;font-family:'+FF+'">\u25B6 Start Auto Demo</button>'
+    +'<button id="auto-stop" style="padding:14px;background:transparent;border:1px solid '+BD+';color:'+T3+';border-radius:8px;font-size:14px;cursor:pointer;font-family:'+FF+'">\u25A0 Stop</button>'
+    +'</div>'
+    +'<div style="font-size:13px;color:'+T2+';line-height:1.7">'
+    +'<div style="font-weight:600;margin-bottom:8px">The auto demo will:</div>'
+    +'<div>1. Show the kiosk home screen for 3 seconds</div>'
+    +'<div>2. Auto-tap badge 1001 (Marcus Rivera)</div>'
+    +'<div>3. Show the clock-in confirmation</div>'
+    +'<div>4. Wait 4 seconds, then auto-tap badge 1004 (Priya Patel)</div>'
+    +'<div>5. Show their clock-out confirmation</div>'
+    +'<div>6. Loop back to step 1</div>'
+    +'<div style="margin-top:12px;color:'+T4+'">Tip: Put the browser in fullscreen (F11) for the best trade show experience.</div>'
+    +'</div></div>';
+
+    var autoInterval=null;
+    document.getElementById("auto-start").onclick=function(){
+      salesPanel.style.display="none";
+      // Auto-demo: simulate badge taps
+      var sequence=[
+        {delay:2000,action:function(){var inp=document.querySelector("input[inputmode=\"numeric\"]");if(inp){inp.value="1001";inp.dispatchEvent(new Event("input",{bubbles:true}))}}},
+        {delay:1500,action:function(){var btns=document.querySelectorAll("button");[].forEach.call(btns,function(b){if(b.textContent.includes("CLOCK")||b.textContent.includes("Clock")||b.textContent.includes("GO"))b.click()})}},
+        {delay:5000,action:function(){var btns=document.querySelectorAll("button");[].forEach.call(btns,function(b){if(b.textContent.includes("Done")||b.textContent.includes("DONE")||b.textContent.includes("Back")||b.textContent.includes("BACK")||b.textContent==="\u2190")b.click()})}},
+        {delay:3000,action:function(){var inp=document.querySelector("input[inputmode=\"numeric\"]");if(inp){inp.value="1004";inp.dispatchEvent(new Event("input",{bubbles:true}))}}},
+        {delay:1500,action:function(){var btns=document.querySelectorAll("button");[].forEach.call(btns,function(b){if(b.textContent.includes("CLOCK")||b.textContent.includes("Clock")||b.textContent.includes("GO"))b.click()})}},
+        {delay:5000,action:function(){var btns=document.querySelectorAll("button");[].forEach.call(btns,function(b){if(b.textContent.includes("Done")||b.textContent.includes("DONE")||b.textContent.includes("Back")||b.textContent.includes("BACK")||b.textContent==="\u2190")b.click()})}}
+      ];
+      var step=0;
+      function runStep(){
+        if(step>=sequence.length){step=0}
+        var s=sequence[step];
+        autoInterval=setTimeout(function(){
+          try{s.action()}catch(e){}
+          step++;
+          runStep();
+        },s.delay);
+      }
+      runStep();
+      safeStorage.setItem("spark-tk-auto-demo","running");
+    };
+    document.getElementById("auto-stop").onclick=function(){
+      if(autoInterval)clearTimeout(autoInterval);
+      safeStorage.removeItem("spark-tk-auto-demo");
+      alert("Auto demo stopped.");
+    };
+  }
+
+  // ── INIT ──
+  function init(){
+    document.body.appendChild(salesBtn);
+    document.body.appendChild(salesPanel);
+    salesPanel.onclick=function(e){if(e.target===salesPanel)salesPanel.style.display="none"};
+    // Move reset button to left side of sales button
+    var resetBtn=document.querySelector("button[style*='bottom:16px'][style*='right:16px']");
+    if(resetBtn){resetBtn.style.right="auto";resetBtn.style.left="180px"}
+  }
+
+  salesPanel.addEventListener("click",function(e){
+    if(e.target===salesPanel)salesPanel.style.display="none";
+  });
+
+  // Build panel on first open
+  var panelBuilt=false;
+  var origOpen=salesBtn.onclick;
+  salesBtn.onclick=function(){
+    salesPanel.style.display="flex";
+    salesPanel.style.alignItems="flex-start";
+    salesPanel.style.justifyContent="center";
+    if(!panelBuilt){buildPanel();panelBuilt=true}
+  };
+
+  if(document.body){init()}else{document.addEventListener("DOMContentLoaded",init)}
+})();
+\n</script>
 </body>
 </html>
